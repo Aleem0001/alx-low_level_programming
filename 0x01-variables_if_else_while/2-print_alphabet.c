@@ -1,8 +1,10 @@
 #include <stdio.h>
 /**
  * main - Entry point
+ *
  * Return: ALway returns 0
  */
+int main(void)
 {
 	char a;
 	for (a = 'a'; a <= 'z' ; a++)
