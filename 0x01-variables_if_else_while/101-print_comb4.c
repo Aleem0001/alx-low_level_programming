@@ -4,7 +4,7 @@
  *
  * Return: alway returns 0
  */
-ibt main(void)
+int main(void)
 {
 	int i;
 	int j;
