@@ -12,9 +12,9 @@ void jack_bauer(void)
 	int hours_remainder;
 	int mins_remainder;
 
-	while (hours <= 23)
+	while (hours <= 24)
 	{
-	while (minutes <= 59)
+	while (minutes <= 60)
 	{
 	mins_remainder = minutes % 10;
 	hours_remainder = hours % 10;
