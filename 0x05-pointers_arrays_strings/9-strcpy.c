@@ -1,7 +1,8 @@
 #include "main.h"
 #include "2-strlen.c"
 /**
- * _strcpy - main function to copy 
+ * _strcpy - main function to copy
+ *
  * @dest: destination to copy
  * @src: src
  *
