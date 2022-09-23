@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 /**
  * print_buffer - print a buffer 10 bytes at a time, displaying the line
  * number in hex and byte pairs in hex
@@ -19,7 +20,7 @@ void print_buffer(char *b, int size)
 	{
 		printf("%08x:", counter);
 		i = 0;
-		while (size2 > 0 && i < 10)
+		while (size > 0 && i < 10)
 		{
 			if (!(i % 2))
 				printf(" ");
