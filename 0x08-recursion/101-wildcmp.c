@@ -1,18 +1,22 @@
 #include "main.h"
-
-int strlen_no_wilds(char *str);
-void iterate_wild(char **wildstr);
-char *postfix_match(char *str, char *postfix);
-int wildcmp(char *s1, char *s2);
-
 /**
- * strlen_no_wilds - Returns the length of a string,
- * 		     ignoring wildcard characters.
- * @str: The string to be measured.
+ * wildcmp - compares two strings.
  *
- * Return: The length.
+ * @s1: string 1.
+ *
+ * @s2: string 2. It can contains a * as a special character.
+ *
+ * Return: 1 if are identical, 0 if not.
  */
-int strlen_no_wilds(char *str)
+int wildcmp(char *s1, char *s2)
 {
-	int len = 0, index = 0;
+	if (*s2 == '*' && *(s2 + 1) != '\0' && *s1 == '\0')
+		return (0);
+	if (*s1 == '\0' && *s2 == '\0')
+		return (1);
+	if (*s1 == *s2)
+		return (wildcmp(s1 + 1, s2 + 1));
+	if (*s2 == '*')
+		return (wildcmp(s1, s2 + 1) || wildcmp(s1 + 1, s2));
+	return (0);
 }
