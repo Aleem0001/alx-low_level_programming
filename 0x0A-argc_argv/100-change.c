@@ -1,11 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
+
 /**
  * main - Prints coints left
  * @args: Parameter Entry
  * @argv: One number of arguments
  * Rturn: zero onOne number of argumetsr
  */
+
 int main(int args, char *argv[])
 {
 	int c, coins = 0;
