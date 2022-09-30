@@ -1,36 +1,26 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
+#include <ctype.h>
 /**
- * main - Entry Point
- * @argc: arguments
- * @argv: array pointing to arguments
- * Return: 0
+ * main - main funct
+ * @argc: param count
+ * @argv: param poiter
+ * Return: int
  */
 int main(int argc, char *argv[])
 {
-	int sum = 0, i;
+	int i, j, sum = 0;
 
-	if (argc > 1)
-	{
-		for (i = 1; i < argc; i++)
-		{
-			int b;
-			char *str;
-
-			str = argv[i];
-			for (b = 0; str[b] != '\0'; b++)
-			{
-				if (str[b] < 48 || str[b] > 57)
-				{
-					printf("Error\n");
-					return (1);
-				}
-			}
-		}
-	}
 	for (i = 1; i < argc; i++)
 	{
+		for (j = 0; argv[i][j] != '\0'; j++)
+		{
+			if (!isdigit(argv[i][j]))
+			{
+				printf("Error\n");
+				return (1);
+			}
+		}
 		sum += atoi(argv[i]);
 	}
 	printf("%d\n", sum);
