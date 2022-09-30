@@ -6,13 +6,14 @@
  * @argv: array pointing to arguments
  * Return: 0
  */
-int main(int argc, __attribute__((unused)) char *argv[])
+int main(int argc, char *argv[])\{
 {
-	int i;
+	int i = 0;
 
-	for (i = 0; i < argc; i++)
+	while (i < argc)
 	{
+		printf("%s\n", argv[i]);
+		i++;
 	}
-	printf("%d\n", i - 1);
 	return (0);
 }
