@@ -4,6 +4,8 @@
 /**
  * main - Prints coints left
  * @args: Parameter Entry
+ * @argv- Prints coints left
+ * @args: Parameter Entry
  * @argv: One number of arguments
  * Rturn: zero onOne number of argumetsr
  */
