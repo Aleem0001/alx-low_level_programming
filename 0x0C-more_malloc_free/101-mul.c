@@ -2,12 +2,20 @@
 #include <stdlib.h>
 
 /**
+<<<<<<< HEAD
 * atoi_digit - convert a char to integer.
 *
 * @x: character to convert.
 *
 * Return: integer.
 **/
+=======
+ * _atoi_digit - convert a char to integer.
+ * @x: character to convert.
+ * Return: integer.
+ **/
+
+>>>>>>> 33f5373e55a93da6c961197e6e789f0cca43b795
 int _atoi_digit(char x)
 {
 unsigned int res;
@@ -18,11 +26,18 @@ return (res);
 }
 
 /**
+<<<<<<< HEAD
 * isNumber - Define if a string is a number.
 * @argv: Pointer to string.
 *
 * Return: success (0).
 **/
+=======
+ * _isNumber - Define if a string is a number.
+ * @argv: Pointer to string.
+ * Return: success (0).
+ **/
+>>>>>>> 33f5373e55a93da6c961197e6e789f0cca43b795
 int _isNumber(char *argv)
 {
 int i;
@@ -34,11 +49,19 @@ return (0);
 }
 
 /**
+<<<<<<< HEAD
 * _calloc - allocate array of size * nmemb.
 * @nmemb: number of elements.
 * @size: size of element.
 * Return: pointer to array.
 **/
+=======
+ *_calloc - allocate array of size * nmemb.
+ * @nmemb: number of elements.
+ * @size: size of element.
+ * Return: pointer to array.
+ **/
+>>>>>>> 33f5373e55a93da6c961197e6e789f0cca43b795
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
@@ -90,10 +113,17 @@ k--;
 return (a3);
 }
 /**
+<<<<<<< HEAD
 * print_array - print all digits of array.
 * @nb: number of elements to print.
 * @a: array of elements.
 */
+=======
+ * print_array - print all digits of array.
+ * @nb: number of elements to print.
+ * @a: array of elements.
+ **/
+>>>>>>> 33f5373e55a93da6c961197e6e789f0cca43b795
 void print_array(char *a, int nb)
 {
 int i = 0;
@@ -110,11 +140,19 @@ _putchar('\n');
 }
 
 /**
+<<<<<<< HEAD
 * main - print the multiplication of 2 numbers.
 * @argc: array length.
 * @argv: array.
 * Return: 0.
 */
+=======
+ *main - print the multiplication of 2 numbers.
+ *@argc: array length.
+ *@argv: array.
+ *Return: 0.
+ */
+>>>>>>> 33f5373e55a93da6c961197e6e789f0cca43b795
 
 int main(int argc, char *argv[])
 {
